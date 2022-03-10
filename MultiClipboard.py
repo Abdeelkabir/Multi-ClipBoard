@@ -2,21 +2,28 @@ import sys
 import clipboard
 import json
 
+#define the json path to stor our data
 JSON_PATH = "clipboard.json"
 
+
+#fonction to save our data into the json file
 def save_data(filepath, data):
     with open(filepath, "w") as f:
         json.dump(data, f)
 
+#fonction to load the data from the json file
 def load_data(filepath):
    try:
        with open(filepath, "r") as f:
         data = json.load(f)
         return data
+    
+   #if the file dont exist, returne an empty dictionary
    except:
        return {}
 
 
+#sys.argv is the list of words in the command we pased in, for example: for the command "python CBoard.py save"    sys.argv = ["CBoard.py", "save"]
 if len(sys.argv) == 2:
     command = sys.argv[1]
     data = load_data(JSON_PATH)
