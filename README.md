@@ -6,19 +6,19 @@ with Multi-Clipboard you will be able to store multiple things in your Clipboard
 
 so open your terminal and go to the file (cd file_path )
 
-to save the current clipboard :
+to save the current clipboard : enter the command
 
 python MultiClipboard.py save        or       python MultiClipboard.py s         and then it well ask you to enter a key for the clipboard to be saved
 
 
 
 
-to load a previous clipboard :
+to load a previous clipboard :   enter the command
 
 python MultiClipboard.py load        or       python MultiClipboard.py l    and then it well ask you to enter the key of the clipboard
 
 
-to show all the clipboards you have saved:
+to show all the clipboards you have saved:  enter the command
 
 python MultiClipboard.py list        or       python MultiClipboard.py ls
 
